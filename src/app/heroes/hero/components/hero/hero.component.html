@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row">
+    <h1>{{name}}</h1>
+    <dl>
+      <td>Nombre</td>
+      <dd>{{name}}</dd>
+
+      <td>Edad</td>
+      <dd>{{age}}</dd>
+
+      <td>Metodo</td>
+      <dd>{{getObtenerNombre()}}</dd>
+
+      <td>Capitalizado</td>
+      <dd>{{capitalizedName}}</dd>
+    </dl>
+  </div>
+  <div class="row">
+      <div class="col-lg-6">
+        <button *ngIf="name !='Spiderman'"
+        (click)="cambiarNombre()" class="btn btn-primary">Cambiar Nombre</button>
+      </div>
+      <div class="col-lg-6">
+        <button *ngIf="age != 30"
+        (click)="cambiarEdad()" class="btn btn-primary">Cambiar Edad</button>
+      </div>
+      <div class="col-lg-6">
+        <button
+        (click)="resetear()" class="btn btn-primary">Resetear</button>
+      </div>
+  </div>
+</div>
