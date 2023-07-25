@@ -6,6 +6,8 @@ import { ListComponent } from './heroes/list/components/list/list.component';
 import { HeroComponent } from './heroes/hero/components/hero/hero.component';
 import { ListModule } from './heroes/list/list.module';
 import { HeroModule } from './heroes/hero/hero.module';
+import { DbzModule } from './dbz/dbz.module';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +18,8 @@ import { HeroModule } from './heroes/hero/hero.module';
   imports: [
     BrowserModule,
     ListModule,
-    HeroModule
+    HeroModule,
+    DbzModule
   ],
   providers: [],
   bootstrap: [AppComponent]
